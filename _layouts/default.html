@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
 </head>
 <body>
+<div id="top"></div>
 {% include nav.html %}
 {{ content }}
+{% include nav_mobile.html %}
 {% include footer.html %}
 {% include scripts-bottom.html %}
 

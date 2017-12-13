@@ -6,6 +6,7 @@ $color-one: $red;
 $color-two: $blue;
 $color-three: $pink;
 
+body {height: 100%;}
 h1 {font-size: 35px;
     color: $color-one;
     font-family: 'Oswald', sans-serif;
@@ -36,7 +37,9 @@ a:link {text-decoration: none;}
             height: 30px;
             width: 30px;
             font-family: 'Arimo', sans-serif;
-            font-size: 20px;}
+            font-size: 20px;
+        }
+
 
 .knop_normaal {background-color: $color-one;
     color: white;
@@ -45,62 +48,26 @@ a:link {text-decoration: none;}
     margin-bottom: 30px;
     font-family: 'Arimo', sans-serif;}
 
-.knop_footer {background-color: white;
-    color: $color-two;
-    border: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    font-family: 'Arimo', sans-serif;}
-
-footer {background-color: $color-two;
-        margin-top: 10px;}
-
-.footer_tekst {color: white;
-                font-size: 15px;
-                margin-left: 10px;
-                font-family: 'Oswald', sans-serif;}
-
-.social_media {margin: 5px;}
-
-.navbar-toggler {border: none;}
-
-.navigatie {background-color:white;
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-            font-size: 20px;
-            color: $color-one;
-            margin-top: 15px;
-            background-color: white;}
-
+.knop_normaal:hover {
+                    background-color:white;
+                    border: solid 3px $color-two;
+                    color: $color-one;
+                    transition-duration: 100ms;}
 .knop_huren {background-color: $color-two;
     color: white;
     border: none;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-family: 'Arimo', sans-serif;}
-
-.stappen {border: solid 3px $color-one;
-        height: 40px;
-        width: 40px;
-        margin: 15px;
-        margin-top: -25px;
-        background: white;
-        z-index: 1;
-        font-family: 'Oswald', sans-serif;
-        }
-
-.stappen:active {background-color: $color-one;
-                color: white;}
-
-.streep_stappen {height: 1px;
-                width: 100%;
-                border-bottom: solid 3px $color-one;
-                margin-top: 50px;
-                z-index: -1;}
+.knop_huren:hover {background-color:white;
+    border: solid 3px $color-one;
+    color: $color-two;
+    transition-duration: 100ms;}
 
 .jumbotron {background-color: white;
             margin-bottom: -40px;}
+
+.foto_jumbotron_desktop {display: none;}
 
 .display-3 {font-size: 30px;
             color: $color-one;
@@ -109,21 +76,34 @@ footer {background-color: $color-two;
     color: $color-two;
     font-family: 'Arimo', sans-serif;}
 
-.streep {height: 1px;
+.streep {height: 2px;
     width: 100%;
     border-bottom: solid 3px $color-one;
     margin-top: 20px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+    }
+
 
 .underline {border: none;
-        border-bottom: solid 2px $color-one;
-        width: 100%;
+        border-bottom: solid 2px $color-two;
+        width: 90%;
         font-size: 15px;
         color: $color-two;
         font-family: 'Arimo', sans-serif;
         margin-top: 25px;}
 
+.underline:focus {width: 100%;
+            border-bottom-color: $color-one;
+            transition: 100ms;
+            outline: none;
+            transition-duration: 200ms;
+            transition-property: width;
+            }
 .form-group {font-size: 15px;
-    color: $color-two;
-    font-family: 'Arimo', sans-serif;
-    }
+                color: $color-two;
+                font-family: 'Arimo', sans-serif;
+                }
+              
+.carousel-inner {background: white;
+                height: 220px;}
+

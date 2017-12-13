@@ -1,0 +1,49 @@
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {.footer {margin-bottom: -50px;}
+    .nav-mobile {display: none;}
+    .foto_jumbotron_mobile {display: none;}
+    .foto_jumbotron_desktop {display: block;}
+    .navigatie {display: flex;}
+    .navbar-expand-lg .navbar-nav {position: absolute;
+                                    right: 2%;}}
+
+.nav_hover_item:hover{background-color:$color-one;
+                height: 65px;
+                margin-right: 5px;
+                margin-top:-25px;
+                transition-duration: 200ms;
+                transition-property: background-color;
+                padding-top: 25px;}
+
+.nav_hover_item.active{background-color:$color-one;
+                    height: 65px;
+                    margin-right: 5px;
+                    margin-top:-25px;
+                    transition-duration: 200ms;
+                    transition-property: background-color;
+                    padding-top: 25px;}
+                
+.navigatie .navbar-nav .nav-item a.nav-link:hover {
+                        color: white !important;
+                        }
+             
+
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}

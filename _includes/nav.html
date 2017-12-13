@@ -1,6 +1,6 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-light navigatie">
     <!-- websitelogo -->
-    <a href="index.html"><img src="assets/img/logo_groot.png" height="50px" alt="logo"></a>
+    <a href="index.html" class="navbar-brand"><img src="assets/img/logo_groot.png" height="45px" alt="logo"></a>
     
     <!-- hamburger icoon -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,12 +28,14 @@
                       </ul>
                   </li>
               {% else %}
-                  <li class="nav-item{{ class }}">
+
+                 <div class="nav_hover_item"><li class="nav-item{{ class }}">
                       <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                  </li>
+                  </li></div>
               {% endif %}
           {% endfor %}
+          <li><a href="stap1.html"><button class="knop_huren_nav">Huur mij</button></a></li>
       </ul>
-      <a href="stap1.html"><button class="knop_huren">Huur mij</button></a>
+      
     </div>
   </nav>
