@@ -32,13 +32,25 @@ p {font-size: 15px;
 a:link {text-decoration: none;}
 
 .plus_knop {background-color: $color-two;
+            border-radius: 25px;
             color: white;
             border: none;
             height: 30px;
             width: 30px;
             font-family: 'Arimo', sans-serif;
             font-size: 20px;
-        }
+            margin-left: 20px;
+            margin-top: -60px;
+            text-align: center !important;
+            &:focus{outline: none;}}
+
+.plus_knop:hover{background-color: white;
+    color: $color-two;
+    border: solid 2px $color-two;
+    transition-duration: 200ms;
+    transform: rotate(45deg);}
+
+.collapse{text-align: center;}
 
 
 .knop_normaal {background-color: $color-one;
@@ -106,4 +118,5 @@ a:link {text-decoration: none;}
               
 .carousel-inner {background: white;
                 height: 220px;}
+
 
