@@ -7,14 +7,14 @@ $color-two: $blue;
 $color-three: $pink;
 
 body {height: 100%;}
+
 h1 {font-size: 35px;
     color: $color-one;
     font-family: 'Oswald', sans-serif;
     margin-top: 15px;}
 h2 {font-size: 25px;
     color: $color-three;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 15px;}
+    font-family: 'Oswald', sans-serif;}
 h3 {font-size: 20px;
     color: $color-one;
     margin-top: 15px;
@@ -118,5 +118,15 @@ a:link {text-decoration: none;}
               
 .carousel-inner {background: white;
                 height: 220px;}
+.foodtruck {border-left: solid 20px $color-one;}
+.foodtruck:hover{border-left: solid 40px $color-two;
+                transition-duration: 400ms;
+                transition-property: border-left;}
+
+
+.over_ons {border-right: solid 20px $color-one;}
+.over_ons:hover{border-right: solid 40px $color-two;
+                        transition-duration: 400ms;
+                        transition-property: border-right;}
 
 
