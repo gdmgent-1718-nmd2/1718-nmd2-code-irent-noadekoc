@@ -24,13 +24,13 @@ h4 {font-size: 20px;
     color: $color-two;
     font-family: 'Oswald', sans-serif;
     margin-top: 15px;}
-p {font-size: 15px;
+p{font-size: 15px;
     color: $color-two;
     font-family: 'Arimo', sans-serif;
     margin-top: 15px;}
 
-a:link {text-decoration: none;}
-
+a {color: $color-two;
+&:link {text-decoration: none;}}
 .plus_knop {background-color: $color-two;
             border-radius: 25px;
             color: white;
@@ -42,13 +42,9 @@ a:link {text-decoration: none;}
             margin-left: 20px;
             margin-top: -60px;
             text-align: center !important;
-            &:focus{outline: none;}}
-
-.plus_knop:hover{background-color: white;
-    color: $color-two;
-    border: solid 2px $color-two;
-    transition-duration: 200ms;
-    transform: rotate(45deg);}
+            &:focus{outline: none;}
+            &:hover{transform: rotate(45deg);
+            transition: 150ms;}}
 
 .collapse{text-align: center;}
 
@@ -58,23 +54,23 @@ a:link {text-decoration: none;}
     border: none;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: 'Arimo', sans-serif;}
-
-.knop_normaal:hover {
-                    background-color:white;
-                    border: solid 3px $color-two;
-                    color: $color-one;
-                    transition-duration: 100ms;}
-.knop_huren {background-color: $color-two;
+    font-family: 'Arimo', sans-serif;
+    &:hover{background-color:white;
+        border: solid 3px $color-two;
+        color: $color-one;
+        transition-duration: 100ms;}}
+                    
+.knop_huren_mobile {background-color: $color-two;
     color: white;
     border: none;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: 'Arimo', sans-serif;}
-.knop_huren:hover {background-color:white;
+    font-family: 'Arimo', sans-serif;
+    width: 100%;
+&:hover {background-color:white;
     border: solid 3px $color-one;
     color: $color-two;
-    transition-duration: 100ms;}
+    transition-duration: 100ms;}}
 
 .jumbotron {background-color: white;
             margin-bottom: -40px;}
@@ -102,31 +98,80 @@ a:link {text-decoration: none;}
         font-size: 15px;
         color: $color-two;
         font-family: 'Arimo', sans-serif;
-        margin-top: 25px;}
-
-.underline:focus {width: 100%;
-            border-bottom-color: $color-one;
-            transition: 100ms;
-            outline: none;
-            transition-duration: 200ms;
-            transition-property: width;
-            }
-.form-group {font-size: 15px;
-                color: $color-two;
-                font-family: 'Arimo', sans-serif;
-                }
+        margin-top: 25px;
+        &:focus {width: 100%;
+        border-bottom-color: $color-one;
+        transition: 100ms;
+        outline: none;
+        transition-duration: 200ms;
+        transition-property: width;}}
               
 .carousel-inner {background: white;
                 height: 220px;}
-.foodtruck {border-left: solid 20px $color-one;}
-.foodtruck:hover{border-left: solid 40px $color-two;
+.foto_links {border-left: solid 20px $color-one;
+            margin-bottom: 20px;
+            &:hover {border-left: solid 40px $color-two;
                 transition-duration: 400ms;
-                transition-property: border-left;}
+                transition-property: border-left;}}
 
+.foto_rechts {border-right: solid 20px $color-one;
+            &:hover {border-right: solid 40px $color-two;
+                transition-duration: 400ms;
+                transition-property: border-right;}}
 
-.over_ons {border-right: solid 20px $color-one;}
-.over_ons:hover{border-right: solid 40px $color-two;
-                        transition-duration: 400ms;
-                        transition-property: border-right;}
+.foto{height: 30px;
+    width: 100px;
+    margin-top: 10px;
+        margin-left: 35px;}
 
+tbody{background-color: transparent;
+            font-size: 15px;
+            color: $color-two;
+            font-family: 'Arimo', sans-serif;
+            margin-top: 15px;
+            border-bottom: solid 2px $color-two;
+            }
+thead{font-family: 'Oswald', sans-serif;
+    background-color: $color-two;
+    color: white;}
+table{margin-top: 20px;}
+.input_tabel {width: 60px;}
 
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-left: solid 20px $color-one;
+    width: 50%;
+    &:hover {border-left: solid 40px $color-two;
+            transition-duration: 200ms;
+            transition-property: border-left;}
+}
+
+/* The Close Button */
+.close {
+    color: $color-two;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: $color-two;
+    text-decoration: none;
+    cursor: pointer;
+}

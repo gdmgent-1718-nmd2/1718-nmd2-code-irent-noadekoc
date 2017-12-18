@@ -19,7 +19,8 @@
     .foto_jumbotron_desktop {display: block;}
     .navigatie {display: flex;}
     .navbar-expand-lg .navbar-nav {position: absolute;
-                                    right: 2%;}}
+                                    right: 2%;}
+    .knop_huren_mobile{display: none;}}
 
 .nav_hover_item:hover{background-color:$color-one;
                 height: 65px;
@@ -29,13 +30,6 @@
                 transition-property: background-color;
                 padding-top: 25px;}
 
-.nav_hover_item.active{background-color:$color-one;
-                    height: 65px;
-                    margin-right: 5px;
-                    margin-top:-25px;
-                    transition-duration: 200ms;
-                    transition-property: background-color;
-                    padding-top: 25px;}
                 
 .navigatie .navbar-nav .nav-item a.nav-link:hover {
                         color: white !important;
