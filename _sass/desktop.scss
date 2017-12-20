@@ -13,7 +13,9 @@
 
 /* Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {.footer {margin-bottom: -50px;}
+@media (min-width: 992px) {.footer {float: bottom;
+                            width: 100%;
+                            margin-bottom: -10;}
     .nav-mobile {display: none;}
     .foto_jumbotron_mobile {display: none;}
     .foto_jumbotron_desktop {display: block;}
