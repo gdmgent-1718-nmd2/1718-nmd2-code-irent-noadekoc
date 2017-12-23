@@ -2,24 +2,31 @@
 
 .navbar-toggler {border: none;}
 
-.navigatie {background-color:white;
+.navigatie.bg-light {background-color: white !important;
             font-family: 'Oswald', sans-serif;
             text-align: center;
             font-size: 20px;
             margin-top: 15px;
             .navbar-nav {                            
                 .nav-item a.nav-link {
-                color: $color-one !important;
-                line-height: 27px;
+                color: $color-one;
+                line-height: 25px;
                 }
             }
         }
-.knop_huren_nav {background-color: $color-two;
+
+.btn.knop_huren_nav {background-color: $color-two;
           color: white;
           border: none;
+          border-radius: 0%;
+          padding-bottom: 5px;
           margin-top: 5px;
           margin-bottom: 20px;
-          font-family: 'Arimo', sans-serif;}
+          font-family: 'Arimo', sans-serif;
+          &:hover {background-color: white;
+            border: solid 2px $color-two;
+            color: $color-two;
+            transition-duration: 100ms;}}
 
     *, *::after, *::before {
         box-sizing: border-box;
@@ -73,7 +80,7 @@
 .nav_stappen {margin-top: 30px;
             margin-bottom: 30px;}
 
-.nav-mobile {background-color: $color-two;
+.nav-mobile.bg-dark {background-color: $color-two !important;
   height: 60px;}
-
-.wrapper {margin-top: 20px;}
+.foto_jumbotron_mobile {margin-bottom: 5px;
+                  margin-top: 15px;}

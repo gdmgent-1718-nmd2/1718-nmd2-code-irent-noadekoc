@@ -22,7 +22,7 @@
     .navigatie {display: flex;}
     .navbar-expand-lg .navbar-nav {position: absolute;
                                     right: 2%;}
-    .knop_huren_mobile{display: none;}}
+    .knop_huren_mobile{display: none;}
 
 .nav_hover_item:hover{background-color:$color-one;
                 height: 65px;
@@ -32,10 +32,19 @@
                 transition-property: background-color;
                 padding-top: 25px;}
 
-                
-.navigatie .navbar-nav .nav-item a.nav-link:hover {
-                        color: white !important;
-                        }
+                .nav-item.active{background-color:$color-one;
+                    height: 65px;
+                    margin-top:-25px;
+                    margin-right: 5px;
+                    transition-duration: 250ms;
+                    transition-property: background-color;
+                    padding-top: 25px;}
+
+.navigatie .navbar-nav .nav_hover_item .nav-item a.nav-link:hover {
+                        color: white;}
+                          
+                        .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {color: white !important;}}
+                    
              
 
 

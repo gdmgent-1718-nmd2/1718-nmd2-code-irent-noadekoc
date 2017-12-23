@@ -4,23 +4,25 @@ footer {background-color: $color-two;
     position: absolute;
     bottom: 0;
 }
-.knop_footer {background-color: white;
+.btn.knop_footer {background-color: white;
     color: $color-two;
     border: none;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 10px;
-    font-family: 'Arimo', sans-serif;}
-
-.knop_footer:hover {background-color: $color-two;
-                    border: solid 2px white;
-                    color: white;
-                    transition-duration: 100ms;}
-
+    font-family: 'Arimo', sans-serif;
+    border-radius: 0%;
+    padding-bottom: 5px;
+&:hover {background-color: $color-two;
+    border: solid 2px white;
+    color: white;
+    transition-duration: 100ms;}}
+    
 .footer_tekst {color: white;
                 font-size: 15px;
                 margin-left: 10px;
-                font-family: 'Oswald', sans-serif;}
+                font-family: 'Oswald', sans-serif;
+}
 
 .social_media {margin: 5px;}
 
