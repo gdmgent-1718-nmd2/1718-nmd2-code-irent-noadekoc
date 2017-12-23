@@ -6,6 +6,10 @@ $color-one: $red;
 $color-two: $blue;
 $color-three: $pink;
 
+.form-control:focus{outline-style:none;
+    box-shadow:none;
+    border-color:transparent;}
+
 h1 {font-size: 35px;
     color: $color-one;
     font-family: 'Oswald', sans-serif;
@@ -45,7 +49,9 @@ a {color: $color-two;
             margin-left: 20px;
             margin-top: -60px;
             text-align: center !important;
-            &:focus{outline: none;}
+            &:focus{outline-style:none;
+                box-shadow:none;
+                border-color:transparent;}
             &:hover{transform: rotate(45deg);
             transition: 150ms;}}
 
@@ -99,17 +105,17 @@ a {color: $color-two;
     }
 
 
-.underline {border: none;
+.form-control.underline {border: none;
+    border-radius: 0%;
         border-bottom: solid 2px $color-two;
         width: 90%;
         font-size: 15px;
         color: $color-two;
         font-family: 'Arimo', sans-serif;
-        margin-top: 25px;
+        margin-top: 5px;
         &:focus {width: 100%;
         border-bottom-color: $color-one;
         transition: 100ms;
-        outline: none;
         transition-duration: 200ms;
         transition-property: width;}}
 
@@ -119,11 +125,13 @@ textarea {border: none;
     font-size: 15px;
     color: $color-two;
     font-family: 'Arimo', sans-serif;
-    margin-top: 25px;
+    margin-top: 10px;
     &:focus {width: 100%;
         border-bottom-color: $color-one;
         transition: 100ms;
-        outline: none;
+        outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
         transition-duration: 200ms;
         transition-property: width;}}
               
