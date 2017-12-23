@@ -127,7 +127,7 @@ textarea {border: none;
     font-family: 'Arimo', sans-serif;
     margin-top: 10px;
     &:focus {width: 100%;
-        border-bottom-color: $color-one;
+        border-bottom-color: $color-one !important;
         transition: 100ms;
         outline-style:none;
     box-shadow:none;
