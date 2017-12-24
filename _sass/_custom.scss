@@ -6,33 +6,41 @@ $color-one: $red;
 $color-two: $blue;
 $color-three: $pink;
 
+$fontsize-one: 35px;
+$fontsize-two: 25px;
+$fontsize-three: 20px;
+$fontsize-four: 15px;
+
+$font-one: 'Oswald', sans-serif;
+$font-one: 'Arimo', sans-serif;
+
 .form-control:focus{outline-style:none;
     box-shadow:none;
     border-color:transparent;}
 
-h1 {font-size: 35px;
+h1 {font-size: $fontsize-one;
     color: $color-one;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-one;
     margin-top: 5px;
     margin-bottom: 20px;
 text-transform: uppercase;}
-h2 {font-size: 25px;
+h2 {font-size: $fontsize-two;
     color: $color-three;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-one;
     font-variant: small-caps;
     &.bevestigpagina_tekst{text-align: center;}}
-h3 {font-size: 20px;
+h3 {font-size: $fontsize-three;
     color: $color-one;
     margin-top: 15px;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-one;
     margin-top: 15px;}
-h4 {font-size: 20px;
+h4 {font-size: $fontsize-three;
     color: $color-two;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-one;
     margin-top: 15px;}
-p{font-size: 15px;
+p{font-size: $fontsize-four;
     color: $color-two;
-    font-family: 'Arimo', sans-serif;
+    font-family: $font-two;
     margin-top: 15px;}
 
 a {color: $color-two;
@@ -44,8 +52,8 @@ a {color: $color-two;
             height: 30px;
             width: 30px;
             padding: 2px;
-            font-family: 'Arimo', sans-serif;
-            font-size: 20px;
+            font-family: $font-two;
+            font-size: $fontsize-three;
             margin-left: 20px;
             margin-top: -60px;
             text-align: center !important;
@@ -65,7 +73,7 @@ a {color: $color-two;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-bottom: 2px;
-    font-family: 'Arimo', sans-serif;
+    font-family:$font-two;
     &:hover{background-color:white;
         border: solid 2px $color-two;
         color: $color-two;
@@ -77,7 +85,7 @@ a {color: $color-two;
     padding-bottom: 2px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: 'Arimo', sans-serif;
+    font-family: $font-two;
     width: 100%;
     border-radius: 0%;
 &:hover {background-color:white;
@@ -92,10 +100,10 @@ a {color: $color-two;
 
 .display-3 {font-size: 30px;
             color: $color-one;
-            font-family: 'Oswald', sans-serif;}
-.lead {font-size: 15px;
+            font-family: $font-one;}
+.lead {font-size: $fontsize-four;
     color: $color-two;
-    font-family: 'Arimo', sans-serif;}
+    font-family: $font-two;}
 
 .streep {height: 2px;
     width: 100%;
@@ -109,9 +117,9 @@ a {color: $color-two;
     border-radius: 0%;
         border-bottom: solid 2px $color-two;
         width: 90%;
-        font-size: 15px;
+        font-size: $fontsize-four;
         color: $color-two;
-        font-family: 'Arimo', sans-serif;
+        font-family: $font-two;
         margin-top: 5px;
         &:focus {width: 100%;
         border-bottom-color: $color-one;
@@ -122,9 +130,9 @@ a {color: $color-two;
 textarea {border: none;
     border-bottom: solid 2px $color-two;
     width: 90%;
-    font-size: 15px;
+    font-size: $fontsize-four;
     color: $color-two;
-    font-family: 'Arimo', sans-serif;
+    font-family: $font-two;
     margin-top: 10px;
     &:focus {width: 100%;
         border-bottom-color: $color-one !important;
@@ -154,13 +162,13 @@ textarea {border: none;
         margin-left: 35px;}
 
 tbody{background-color: transparent;
-            font-size: 15px;
+            font-size: $fontsize-four;
             color: $color-two;
-            font-family: 'Arimo', sans-serif;
+            font-family: $font-two;
             margin-top: 15px;
             border-bottom: solid 2px $color-two;
             }
-thead{font-family: 'Oswald', sans-serif;
+thead{font-family: $font-one;
     background-color: $color-two;
     color: white;}
 table{margin-top: 20px;}
@@ -206,10 +214,10 @@ table{margin-top: 20px;}
 
 .popup {border: none;
 background-color: transparent;
-font-size: 15px;
+font-size: $fontsize-four;
 color: $color-two;
-font-family: 'Arimo', sans-serif;
+font-family: $fontsize-two;
 margin-top: 5px; }
 .form-group{width: 90%;}
-select {font-family: 'Arimo' sans-serif;}
+select {font-family: $font-two;}
 .header{margin-bottom: 30px;}
